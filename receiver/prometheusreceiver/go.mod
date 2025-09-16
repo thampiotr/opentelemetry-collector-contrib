@@ -2,6 +2,8 @@ module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/promet
 
 go 1.23.0
 
+replace github.com/prometheus/prometheus => github.com/grafana/prometheus v1.8.2-0.20250811161144-6e21f656d8e5
+
 require (
 	github.com/go-kit/log v0.2.1
 	github.com/goccy/go-yaml v1.18.0
@@ -16,7 +18,7 @@ require (
 	github.com/prometheus/client_golang v1.22.0
 	github.com/prometheus/common v0.65.0
 	github.com/prometheus/exporter-toolkit v0.14.0
-	github.com/prometheus/prometheus v0.304.3-0.20250703114031-419d436a447a
+	github.com/prometheus/prometheus v0.304.3-0.20250703114031-419d436a447a // replaced with grafana/prometheus
 	github.com/stretchr/testify v1.10.0
 	go.opentelemetry.io/collector/component v1.36.0
 	go.opentelemetry.io/collector/component/componentstatus v0.130.0
@@ -206,7 +208,6 @@ require (
 	github.com/shurcooL/httpfs v0.0.0-20230704072500-f1e31cf0ba5c // indirect
 	github.com/spf13/cobra v1.9.1 // indirect
 	github.com/spf13/pflag v1.0.6 // indirect
-	github.com/stackitcloud/stackit-sdk-go/core v0.17.2 // indirect
 	github.com/tidwall/gjson v1.10.2 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
